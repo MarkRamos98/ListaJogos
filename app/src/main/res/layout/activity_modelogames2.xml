@@ -16,7 +16,7 @@
             android:layout_width="190dp"
             android:layout_height="250dp"
             android:contentDescription=""
-            android:src="#BC8F8F" />
+            android:src="@drawable/tesvskyrim" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -28,7 +28,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:text="@string/nome" />
+                android:text="The Elder Srolls V Skyrim" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -38,7 +38,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:text="0.0"
+                    android:text="5.0"
                     android:textSize="22sp" />
 
 
@@ -53,13 +53,19 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Descrição: " />
+                android:text="Descrição: The Elder Scrolls V: Skyrim é um jogo eletrônico de RPG
+                 de ação desenvolvido pela Bethesda Game Studios" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
                 android:text="Classificação Etária:" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Data de lançamento inicial: 11 de novembro de 2011"
 
         </LinearLayout>
 
