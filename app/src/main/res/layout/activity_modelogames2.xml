@@ -15,7 +15,7 @@
         <ImageView
             android:layout_width="190dp"
             android:layout_height="250dp"
-            android:contentDescription=""
+            android:contentDescription="Skyrim"
             android:src="@drawable/tesvskyrim" />
 
         <LinearLayout
@@ -60,7 +60,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
-                android:text="Classificação Etária:" />
+                android:text="Classificação Etária: Não recomendado para menores de dezoito anos" />
 
             <TextView
                 android:layout_width="match_parent"
