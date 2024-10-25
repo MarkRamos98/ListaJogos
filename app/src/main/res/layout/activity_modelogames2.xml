@@ -18,7 +18,8 @@
             android:layout_width="190dp"
             android:layout_height="250dp"
             android:contentDescription="@string/skyrim"
-            android:src="@drawable/tesvskyrim" />
+            android:src="@drawable/tesvskyrim"
+            android:id="@+id/ImageMod"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -30,7 +31,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:text="@string/the_elder_srolls_v_skyrim" />
+                android:text="@string/the_elder_srolls_v_skyrim"
+                android:id="@+id/NomeMod"/>
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -41,7 +43,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:text="@string/_5_0"
-                    android:textSize="22sp" />
+                    android:textSize="22sp"
+                    android:id="@+id/ClassMod"/>
 
 
                 <ImageView
@@ -55,18 +58,21 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/descri_o_the_elder_scrolls_v_skyrim_um_jogo_eletr_nico_de_rpg_de_a_o_desenvolvido_pela_bethesda_game_studios" />
+                android:text="@string/descri_o_the_elder_scrolls_v_skyrim_um_jogo_eletr_nico_de_rpg_de_a_o_desenvolvido_pela_bethesda_game_studios"
+                android:id="@+id/DescricaoMod"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
-                android:text="@string/classifica_o_et_ria_n_o_recomendado_para_menores_de_dezoito_anos" />
+                android:text="@string/classifica_o_et_ria_n_o_recomendado_para_menores_de_dezoito_anos"
+                android:id="@+id/ClassEtMod"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="@string/data_de_lan_amento_inicial_11_de_novembro_de_2011"/>
+                android:text="@string/data_de_lan_amento_inicial_11_de_novembro_de_2011"
+                android:id="@+id/DatMod"/>
 
         </LinearLayout>
 

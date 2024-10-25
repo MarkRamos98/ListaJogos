@@ -1,7 +1,72 @@
 package br.com.etecia.myapp;
 
-public class Adapter extends MainActivity {
+import android.content.Context;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
+
+import java.util.List;
+
+public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
+
+    private Context context;
+    private List<Games> lsgames;
+
+    @NonNull
+    @Override
+    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+
+        View view;
+
+        LayoutInflater inflater = LayoutInflater.from(context);
+        view = inflater.inflate(R.layout.activity_modelogames2,parent,false);
+
+        return new ViewHolder(view);
 
 
+
+    }
+
+    @Override
+    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+
+    }
+
+    @Override
+    public int getItemCount() {
+        return 0;
+    }
+
+    public class ViewHolder extends RecyclerView.ViewHolder{
+
+        ImageView ImageMod;
+
+        TextView NomeMod;
+
+        TextView ClassMod;
+
+        TextView DescricaoMod;
+
+        TextView ClassEtMod;
+
+        TextView DatMod;
+
+        public ViewHolder(@NonNull View itemView) {
+            super(itemView);
+
+            ImageMod = itemView.findViewById(R.id.ImageMod);
+            NomeMod = itemView.findViewById(R.id.NomeMod);
+            ClassMod = itemView.findViewById(R.id.ClassMod);
+            DescricaoMod = itemView.findViewById(R.id.DescricaoMod);
+            ClassEtMod = itemView.findViewById(R.id.ClassEtMod);
+            DatMod = itemView.findViewById(R.id.DatMod);
+
+        }
+    }
 
 }
