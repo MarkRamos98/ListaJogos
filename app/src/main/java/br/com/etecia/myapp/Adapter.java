@@ -17,6 +17,11 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
     private Context context;
     private List<Games> lsgames;
 
+    public Adapter(Context context, List<Games> lsgames) {
+        this.context = context;
+        this.lsgames = lsgames;
+    }
+
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -28,18 +33,19 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
 
         return new ViewHolder(view);
 
-
-
     }
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
 
+        holder.NomeMod.setText(lsgames.get(position).);
+        holder.ImageMod.setImageResource();
+
     }
 
     @Override
     public int getItemCount() {
-        return 0;
+        return lsgames.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder{
