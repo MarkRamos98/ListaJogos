@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">MyApp</string>
     <string name="nome">Nome</string>
+    <string name="skyrim">Skyrim</string>
+    <string name="the_elder_srolls_v_skyrim">The Elder Srolls V Skyrim</string>
+    <string name="_5_0">5.0</string>
+    <string name="descri_o_the_elder_scrolls_v_skyrim_um_jogo_eletr_nico_de_rpg_de_a_o_desenvolvido_pela_bethesda_game_studios">Descrição: The Elder Scrolls V: Skyrim é um jogo eletrônico de RPG de ação desenvolvido pela Bethesda Game Studios</string>
+    <string name="classifica_o_et_ria_n_o_recomendado_para_menores_de_dezoito_anos">Classificação Etária: Não recomendado para menores de dezoito anos</string>
+    <string name="data_de_lan_amento_inicial_11_de_novembro_de_2011">Data de lançamento inicial: 11 de novembro de 2011</string>
 </resources>

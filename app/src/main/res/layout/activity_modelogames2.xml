@@ -10,12 +10,14 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        tools:ignore="MissingConstraints">
 
         <ImageView
             android:layout_width="190dp"
             android:layout_height="250dp"
-            android:contentDescription="Skyrim"
+            android:contentDescription="@string/skyrim"
             android:src="@drawable/tesvskyrim" />
 
         <LinearLayout
@@ -28,7 +30,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:text="The Elder Srolls V Skyrim" />
+                android:text="@string/the_elder_srolls_v_skyrim" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -38,7 +40,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:text="5.0"
+                    android:text="@string/_5_0"
                     android:textSize="22sp" />
 
 
@@ -53,19 +55,18 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Descrição: The Elder Scrolls V: Skyrim é um jogo eletrônico de RPG
-                 de ação desenvolvido pela Bethesda Game Studios" />
+                android:text="@string/descri_o_the_elder_scrolls_v_skyrim_um_jogo_eletr_nico_de_rpg_de_a_o_desenvolvido_pela_bethesda_game_studios" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
-                android:text="Classificação Etária: Não recomendado para menores de dezoito anos" />
+                android:text="@string/classifica_o_et_ria_n_o_recomendado_para_menores_de_dezoito_anos" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="Data de lançamento inicial: 11 de novembro de 2011"
+                android:text="@string/data_de_lan_amento_inicial_11_de_novembro_de_2011"
 
         </LinearLayout>
 
