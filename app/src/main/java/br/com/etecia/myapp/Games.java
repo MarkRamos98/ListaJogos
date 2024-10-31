@@ -10,4 +10,19 @@ public class Games {
         this.nome = nome;
         this.image = image;
     }
+    public String getnome() {
+        return nome;
+    }
+
+    public void setnome(String titulo) {
+        this.nome = titulo;
+    }
+
+    public int getImage() {
+        return image;
+    }
+
+    public void setImage(int imagem) {
+        this.image = imagem;
+    }
 }

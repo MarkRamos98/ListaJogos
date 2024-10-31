@@ -38,8 +38,8 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
 
-        holder.NomeMod.setText(lsgames.get(position).);
-        holder.ImageMod.setImageResource();
+        holder.NomeMod.setText(lsgames.get(position).getnome());
+        holder.ImageMod.setImageResource(lsgames.get(position).getImage());
 
     }
 
