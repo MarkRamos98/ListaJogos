@@ -40,6 +40,10 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
 
         holder.NomeMod.setText(lsgames.get(position).getNome());
         holder.ImageMod.setImageResource(lsgames.get(position).getImage());
+        holder.ClassMod.setText(lsgames.get(position).getClas());
+        holder.ClassEtMod.setText(lsgames.get(position).getClase());
+        holder.DatMod.setText(lsgames.get(position).getDat());
+        holder.DescricaoMod.setText(lsgames.get(position).getDesc());
 
     }
 

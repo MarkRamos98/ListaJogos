@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
         recycleGames = view.findViewById(R.id.recycleGames);
 
         lsgames = new ArrayList<>();
-        lsgames.add(new Adapter(R.drawable.tesvskyrim));
+        lsgames.add(new Adapter("Skyrim",R.drawable.tesvskyrim));
 
         //carregando adaptador
         Adapter adapter = new Adapter(getApplicationContext(),lsgames);
