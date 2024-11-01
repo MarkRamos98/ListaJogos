@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
         lsgames.add(new Adapter(R.drawable.tesvskyrim));
 
         //carregando adaptador
-        Adapter Adapter = new Adapter(getApplicationContext(),lsgames);
+        Adapter adapter = new Adapter(getApplicationContext(),lsgames);
 
         recycleGames.setLayoutManager(new GridLayoutManager(getApplicationContext(),1));
 
