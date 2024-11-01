@@ -8,21 +8,20 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.activity.EdgeToEdge;
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-import androidx.viewpager2.widget.ViewPager2;
+
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
-    Adapter adapter;
 
+    RecyclerView recycleGames;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     private List<Adapter> lsgames;
-    RecyclerView recycleGames;
+
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle saveInstanceState){
 
@@ -48,14 +47,14 @@ public class MainActivity extends AppCompatActivity {
         recycleGames = view.findViewById(R.id.recycleGames);
 
         lsgames = new ArrayList<>();
-        lsgames.add(new Games("NomeMod",R.drawable.tesvskyrim);
+        lsgames.add(new Adapter(R.drawable.tesvskyrim));
 
         //carregando adaptador
-        recycleGames adapter = new recycleGames(getContext(),lsgames);
+        Adapter adapter = new Adapter(getApplicationContext(),lsgames);
 
-        recycleGames.setLayoutManager(new GridLayoutManager(getContext(),1));
+        recycleGames.setLayoutManager(new GridLayoutManager(getApplicationContext(),1));
 
-        recycleGames.setAdapter();
+        recycleGames.setAdapter(adapter);
     }
 
 }

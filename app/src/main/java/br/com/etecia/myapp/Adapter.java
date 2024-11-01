@@ -29,7 +29,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
         View view;
 
         LayoutInflater inflater = LayoutInflater.from(context);
-        view = inflater.inflate(R.layout.activity_modelogames2,parent,false);
+        view = inflater.inflate(R.layout.modelo_games,parent,false);
 
         return new ViewHolder(view);
 
@@ -38,7 +38,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
 
-        holder.NomeMod.setText(lsgames.get(position).getnome());
+        holder.NomeMod.setText(lsgames.get(position).getNome());
         holder.ImageMod.setImageResource(lsgames.get(position).getImage());
 
     }
