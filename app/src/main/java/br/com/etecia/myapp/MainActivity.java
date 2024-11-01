@@ -40,14 +40,14 @@ public class MainActivity extends AppCompatActivity {
     private List<Adapter> lsgames;
 
 
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle saveInstanceState){
+    public View onCreate(LayoutInflater inflater, ViewGroup container, Bundle saveInstanceState){
 
         View view = inflater.inflate(R.layout.activity_main, container, false);
 
         recycleGames = view.findViewById(R.id.recycleGames);
 
         lsgames = new ArrayList<>();
-        lsgames.add(new Adapter(R.drawable.tesvskyrim));
+        lsgames.add(new Games("AAA",R.drawable.tesvskyrim,"AAA","AAA","AAA","AAA");
 
         //carregando adaptador
         Adapter adapter = new Adapter(getApplicationContext(),lsgames);
